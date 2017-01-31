@@ -1,7 +1,8 @@
 const whiteboard = require('./whiteboard');
+const io = require('../node_modules/socket.io-client/dist/socket.io.min.js');
 // const socket = require('socket.io-client');
-import socket from 'socket.io-client';
 
+const socket = new io();
 console.log(socket)
 socket.on('connect', function () {
   console.log('Connected!');
