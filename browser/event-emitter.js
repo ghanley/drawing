@@ -1,4 +1,5 @@
-module.exports = EventEmitter;
+// module.exports = EventEmitter;
+export default EventEmitter;
 
 // our EventEmitter contructor function
 function EventEmitter () {

@@ -1,7 +1,9 @@
-const EventEmitter = require('./event-emitter');
+// const EventEmitter = require('./event-emitter');
+import EventEmitter from './event-emitter';
 
 const whiteboard = new EventEmitter();
-module.exports = whiteboard;
+
+export default whiteboard;
 
 // Ultimately, the color of our stroke;
 var color;
