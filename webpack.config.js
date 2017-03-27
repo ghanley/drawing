@@ -3,5 +3,6 @@ module.exports = {
   output: {
     path: __dirname + '/browser',
     filename: 'bundle.js'
-  }
+  },
+  watch: true
 }
