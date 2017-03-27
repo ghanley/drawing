@@ -1,22 +1,15 @@
 var path = require('path');
-
-var http = require('http');
-var server = http.createServer();
-
 var express = require('express');
 var app = express();
-
 var socketio = require('socket.io');
 
-server.on('request', app);
+const server = app.listen(1337, function () {
+  console.log('The server is listening on port 1337!');
+});
 
 var io = socketio(server);
 
 var inMemoryDrawHistory = [];
-
-server.listen(1337, function () {
-  console.log('The server is listening on port 1337!');
-});
 
 app.use(express.static(path.join(__dirname, 'browser')));
 
