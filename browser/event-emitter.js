@@ -1,6 +1,6 @@
-(function () {
 
-  window.EventEmitter = EventEmitter;
+  
+  // window.EventEmitter = EventEmitter;
 
   // our EventEmitter contructor function
   function EventEmitter () {
@@ -42,4 +42,6 @@
     });
 
   };
-})();
+
+  module.exports = EventEmitter;
+
